@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OJi-3F-j0Q" customClass="PermissionContactsView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="permission-contacts-banner" translatesAutoresizingMaskIntoConstraints="NO" id="MPh-cx-xjz"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocq-gt-zTF">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="permission-contacts" translatesAutoresizingMaskIntoConstraints="NO" id="JTf-fl-Ybb">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="151" id="RSp-LH-6YA"/>
+                                <constraint firstAttribute="width" constant="131" id="qbd-xh-8HB"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goo-P8-Yib">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="8hb-Pe-xbU"/>
+                                <constraint firstAttribute="width" constant="249" id="eyt-9d-eXP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                            <state key="normal" title="ALLOW CONTACTS">
+                                <color key="titleColor" red="0.69019607839999997" green="0.74509803919999995" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find friends to invite by using your address book" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVP-yq-XDe">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="203" id="Cn2-uT-yha"/>
+                                <constraint firstAttribute="height" constant="76" id="hAd-8D-eiB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Goo-P8-Yib" secondAttribute="bottom" constant="47" id="5FD-4W-msS"/>
+                        <constraint firstItem="DVP-yq-XDe" firstAttribute="top" secondItem="JTf-fl-Ybb" secondAttribute="bottom" constant="18" id="O6D-Gs-UbD"/>
+                        <constraint firstItem="DVP-yq-XDe" firstAttribute="centerX" secondItem="ocq-gt-zTF" secondAttribute="centerX" id="TFF-KK-sJJ"/>
+                        <constraint firstItem="JTf-fl-Ybb" firstAttribute="centerX" secondItem="ocq-gt-zTF" secondAttribute="centerX" id="aqb-Nd-zSr"/>
+                        <constraint firstItem="JTf-fl-Ybb" firstAttribute="top" secondItem="ocq-gt-zTF" secondAttribute="top" constant="75" id="du7-r0-Nrf"/>
+                        <constraint firstItem="Goo-P8-Yib" firstAttribute="centerX" secondItem="ocq-gt-zTF" secondAttribute="centerX" id="x5F-pT-tYT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MPh-cx-xjz" secondAttribute="trailing" id="RoL-nf-hJW"/>
+                <constraint firstAttribute="trailing" secondItem="ocq-gt-zTF" secondAttribute="trailing" id="Se5-kb-bql"/>
+                <constraint firstAttribute="bottom" secondItem="ocq-gt-zTF" secondAttribute="bottom" id="WQN-Dp-5D4"/>
+                <constraint firstItem="ocq-gt-zTF" firstAttribute="top" secondItem="OJi-3F-j0Q" secondAttribute="top" id="Ygc-v6-j5K"/>
+                <constraint firstItem="MPh-cx-xjz" firstAttribute="leading" secondItem="OJi-3F-j0Q" secondAttribute="leading" id="dHa-d1-Ze4"/>
+                <constraint firstItem="ocq-gt-zTF" firstAttribute="leading" secondItem="OJi-3F-j0Q" secondAttribute="leading" id="jhp-hF-swu"/>
+                <constraint firstItem="MPh-cx-xjz" firstAttribute="top" secondItem="OJi-3F-j0Q" secondAttribute="top" id="lPD-RW-g6K"/>
+                <constraint firstAttribute="bottom" secondItem="MPh-cx-xjz" secondAttribute="bottom" id="nKd-uR-FC8"/>
+            </constraints>
+            <connections>
+                <outlet property="allowPermissionBtn" destination="Goo-P8-Yib" id="fbK-Bg-CWt"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="-102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="permission-contacts" width="512" height="512"/>
+        <image name="permission-contacts-banner" width="722" height="1280"/>
+    </resources>
+</document>

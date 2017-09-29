@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iks-3Z-Acz" customClass="PickerDateView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-hy-F4W">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dV3-i4-jIx">
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Bx-zA-oce">
+                                    <date key="date" timeIntervalSinceReferenceDate="496697914.666816">
+                                        <!--2016-09-27 19:38:34 +0000-->
+                                    </date>
+                                </datePicker>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="8Bx-zA-oce" secondAttribute="trailing" id="5c0-rv-nMd"/>
+                                <constraint firstItem="8Bx-zA-oce" firstAttribute="leading" secondItem="dV3-i4-jIx" secondAttribute="leading" id="9cv-RH-qh3"/>
+                                <constraint firstItem="8Bx-zA-oce" firstAttribute="top" secondItem="dV3-i4-jIx" secondAttribute="top" id="FsV-Uy-BqK"/>
+                                <constraint firstAttribute="height" constant="220" id="Vtv-3c-AaB"/>
+                                <constraint firstAttribute="bottom" secondItem="8Bx-zA-oce" secondAttribute="bottom" id="rsp-sw-oiP"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahY-cF-eN8">
+                            <connections>
+                                <action selector="onClose:" destination="iks-3Z-Acz" eventType="touchUpInside" id="PEs-rY-DqL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ahY-cF-eN8" firstAttribute="top" secondItem="Teb-hy-F4W" secondAttribute="top" id="4RE-35-vXu"/>
+                        <constraint firstAttribute="bottom" secondItem="dV3-i4-jIx" secondAttribute="bottom" id="AJ7-ue-YuA"/>
+                        <constraint firstAttribute="trailing" secondItem="ahY-cF-eN8" secondAttribute="trailing" id="FuT-lP-k8J"/>
+                        <constraint firstItem="ahY-cF-eN8" firstAttribute="leading" secondItem="Teb-hy-F4W" secondAttribute="leading" id="VPF-Rq-QoE"/>
+                        <constraint firstItem="dV3-i4-jIx" firstAttribute="leading" secondItem="Teb-hy-F4W" secondAttribute="leading" id="iD3-p9-Mjj"/>
+                        <constraint firstAttribute="trailing" secondItem="dV3-i4-jIx" secondAttribute="trailing" id="nbS-xQ-SCh"/>
+                        <constraint firstItem="dV3-i4-jIx" firstAttribute="top" secondItem="ahY-cF-eN8" secondAttribute="bottom" id="raf-DA-cXo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Teb-hy-F4W" firstAttribute="top" secondItem="iks-3Z-Acz" secondAttribute="top" id="Ivl-Y3-eZW"/>
+                <constraint firstItem="Teb-hy-F4W" firstAttribute="leading" secondItem="iks-3Z-Acz" secondAttribute="leading" id="RXc-NR-vQe"/>
+                <constraint firstAttribute="trailing" secondItem="Teb-hy-F4W" secondAttribute="trailing" id="VkI-BA-0QY"/>
+                <constraint firstAttribute="bottom" secondItem="Teb-hy-F4W" secondAttribute="bottom" id="Zow-vJ-Cm0"/>
+            </constraints>
+            <connections>
+                <outlet property="holder" destination="dV3-i4-jIx" id="8U7-vp-Oav"/>
+                <outlet property="overlay" destination="Teb-hy-F4W" id="1V5-PW-Wrh"/>
+                <outlet property="picker" destination="8Bx-zA-oce" id="MKc-li-v7Y"/>
+            </connections>
+            <point key="canvasLocation" x="-130" y="-36"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dY2-pU-apu" customClass="ChooseBannerCell" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wP4-Z6-HyZ">
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="wP4-Z6-HyZ" firstAttribute="top" secondItem="dY2-pU-apu" secondAttribute="top" id="I6r-HU-fHs"/>
+                <constraint firstAttribute="bottom" secondItem="wP4-Z6-HyZ" secondAttribute="bottom" id="JMA-zW-oac"/>
+                <constraint firstAttribute="trailing" secondItem="wP4-Z6-HyZ" secondAttribute="trailing" id="WOc-IA-SQ2"/>
+                <constraint firstItem="wP4-Z6-HyZ" firstAttribute="leading" secondItem="dY2-pU-apu" secondAttribute="leading" id="hWm-bh-wMI"/>
+            </constraints>
+            <size key="customSize" width="99" height="99"/>
+            <connections>
+                <outlet property="thumbnail" destination="wP4-Z6-HyZ" id="ZZB-re-d6e"/>
+            </connections>
+            <point key="canvasLocation" x="-298" y="-380"/>
+        </collectionViewCell>
+    </objects>
+</document>

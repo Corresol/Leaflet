@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hYd-cM-cuI" customClass="ChatListView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJh-6U-yzU">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShR-A5-qKp">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="ps4-0v-Lmr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvX-tC-LKT">
+                            <frame key="frameInset" minY="8" width="75" height="56"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClose:" destination="hYd-cM-cuI" eventType="touchUpInside" id="v3A-Vz-dQP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ShR-A5-qKp" secondAttribute="bottom" id="1hx-Wi-c8O"/>
+                        <constraint firstItem="ShR-A5-qKp" firstAttribute="top" secondItem="kJh-6U-yzU" secondAttribute="top" constant="8" id="ZJW-Nn-ee8"/>
+                        <constraint firstAttribute="height" constant="64" id="iVw-bo-nY3"/>
+                        <constraint firstItem="ShR-A5-qKp" firstAttribute="centerX" secondItem="kJh-6U-yzU" secondAttribute="centerX" id="tV0-PU-gyK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKF-Tf-H24">
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FYe-DW-Phl">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No active chats found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC8-gg-CCe">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FYe-DW-Phl" firstAttribute="top" secondItem="aKF-Tf-H24" secondAttribute="top" id="1L8-6z-5cd"/>
+                        <constraint firstAttribute="trailing" secondItem="FYe-DW-Phl" secondAttribute="trailing" id="9nn-sR-osQ"/>
+                        <constraint firstAttribute="trailing" secondItem="hC8-gg-CCe" secondAttribute="trailing" id="MWw-Ku-d6d"/>
+                        <constraint firstItem="hC8-gg-CCe" firstAttribute="leading" secondItem="aKF-Tf-H24" secondAttribute="leading" id="PC0-TG-KWv"/>
+                        <constraint firstItem="hC8-gg-CCe" firstAttribute="top" secondItem="aKF-Tf-H24" secondAttribute="top" id="TL5-Sn-QeF"/>
+                        <constraint firstAttribute="bottom" secondItem="FYe-DW-Phl" secondAttribute="bottom" id="X8J-0T-Eia"/>
+                        <constraint firstAttribute="bottom" secondItem="hC8-gg-CCe" secondAttribute="bottom" constant="67" id="fjb-33-CG3"/>
+                        <constraint firstItem="FYe-DW-Phl" firstAttribute="leading" secondItem="aKF-Tf-H24" secondAttribute="leading" id="swl-n5-vmN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aKF-Tf-H24" firstAttribute="top" secondItem="kJh-6U-yzU" secondAttribute="bottom" id="8ww-Q4-q0b"/>
+                <constraint firstAttribute="bottom" secondItem="aKF-Tf-H24" secondAttribute="bottom" id="DZZ-CL-cbC"/>
+                <constraint firstItem="kJh-6U-yzU" firstAttribute="leading" secondItem="hYd-cM-cuI" secondAttribute="leading" id="NCp-D9-pZS"/>
+                <constraint firstItem="aKF-Tf-H24" firstAttribute="leading" secondItem="hYd-cM-cuI" secondAttribute="leading" id="VkW-sD-Nts"/>
+                <constraint firstAttribute="trailing" secondItem="aKF-Tf-H24" secondAttribute="trailing" id="iD2-OP-33W"/>
+                <constraint firstItem="kJh-6U-yzU" firstAttribute="top" secondItem="hYd-cM-cuI" secondAttribute="top" id="j4a-Zm-QqM"/>
+                <constraint firstAttribute="trailing" secondItem="kJh-6U-yzU" secondAttribute="trailing" id="naX-mY-Jn5"/>
+            </constraints>
+            <connections>
+                <outlet property="emptyView" destination="hC8-gg-CCe" id="3X3-CX-dqY"/>
+                <outlet property="list" destination="FYe-DW-Phl" id="SLB-KN-YdX"/>
+            </connections>
+            <point key="canvasLocation" x="-436" y="-244"/>
+        </view>
+    </objects>
+</document>

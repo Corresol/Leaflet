@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ncn-7A-2c2" customClass="IntermediaryView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="T74-Br-uSv"/>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="T74-Br-uSv" secondAttribute="trailing" id="Iub-62-Puz"/>
+                <constraint firstItem="T74-Br-uSv" firstAttribute="leading" secondItem="ncn-7A-2c2" secondAttribute="leading" id="coF-eG-yGE"/>
+                <constraint firstAttribute="bottom" secondItem="T74-Br-uSv" secondAttribute="bottom" id="h2V-mH-Epu"/>
+                <constraint firstItem="T74-Br-uSv" firstAttribute="top" secondItem="ncn-7A-2c2" secondAttribute="top" id="wJk-Wf-LdM"/>
+            </constraints>
+            <point key="canvasLocation" x="-169" y="-19"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash" width="750" height="1334"/>
+    </resources>
+</document>

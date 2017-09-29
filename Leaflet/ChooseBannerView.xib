@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cXD-PF-djo" customClass="ChooseBannerView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Huf-1x-CTl">
+                    <color key="backgroundColor" red="0.81176470590000005" green="0.83921568629999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mVh-bC-I3E">
+                        <size key="itemSize" width="80" height="80"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2c4-gY-nmO">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cb2-IV-BAF">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="bTw-8r-7Mv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftf-hi-eBP">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClose:" destination="cXD-PF-djo" eventType="touchUpInside" id="VUt-rd-mxy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="9Fc-FP-J0o"/>
+                        <constraint firstItem="ftf-hi-eBP" firstAttribute="leading" secondItem="2c4-gY-nmO" secondAttribute="leading" id="MoJ-IK-Ps2"/>
+                        <constraint firstItem="ftf-hi-eBP" firstAttribute="bottom" secondItem="Cb2-IV-BAF" secondAttribute="bottom" id="SHU-Dz-lLV"/>
+                        <constraint firstItem="Cb2-IV-BAF" firstAttribute="leading" secondItem="ftf-hi-eBP" secondAttribute="trailing" constant="47" id="aiB-YO-Kh5"/>
+                        <constraint firstItem="Cb2-IV-BAF" firstAttribute="top" secondItem="2c4-gY-nmO" secondAttribute="top" constant="8" id="iMk-m6-M3I"/>
+                        <constraint firstAttribute="height" constant="64" id="t53-Ef-lDi"/>
+                        <constraint firstItem="ftf-hi-eBP" firstAttribute="top" secondItem="Cb2-IV-BAF" secondAttribute="top" id="uIu-XG-H4X"/>
+                        <constraint firstAttribute="bottom" secondItem="Cb2-IV-BAF" secondAttribute="bottom" id="vlf-vs-1kf"/>
+                        <constraint firstItem="Cb2-IV-BAF" firstAttribute="centerX" secondItem="2c4-gY-nmO" secondAttribute="centerX" id="yw5-IC-5px"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for banner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cpp-zi-xR0">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="vrf-Qb-qgl"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2c4-gY-nmO" firstAttribute="leading" secondItem="cXD-PF-djo" secondAttribute="leading" id="4ml-0c-7n4"/>
+                <constraint firstItem="cpp-zi-xR0" firstAttribute="leading" secondItem="cXD-PF-djo" secondAttribute="leading" constant="16" id="8yT-Re-Tjt"/>
+                <constraint firstAttribute="trailing" secondItem="cpp-zi-xR0" secondAttribute="trailing" constant="16" id="Edr-Fr-weL"/>
+                <constraint firstItem="Huf-1x-CTl" firstAttribute="leading" secondItem="cXD-PF-djo" secondAttribute="leading" id="GrO-S2-lHH"/>
+                <constraint firstItem="cpp-zi-xR0" firstAttribute="top" secondItem="2c4-gY-nmO" secondAttribute="bottom" id="MIJ-gM-06H"/>
+                <constraint firstAttribute="trailing" secondItem="2c4-gY-nmO" secondAttribute="trailing" id="PhF-s2-Hwq"/>
+                <constraint firstAttribute="trailing" secondItem="Huf-1x-CTl" secondAttribute="trailing" id="Ro3-Ca-oaF"/>
+                <constraint firstItem="2c4-gY-nmO" firstAttribute="top" secondItem="cXD-PF-djo" secondAttribute="top" id="Wxg-Oj-7jL"/>
+                <constraint firstItem="Huf-1x-CTl" firstAttribute="top" secondItem="cpp-zi-xR0" secondAttribute="bottom" id="Y1R-ry-2nQ"/>
+                <constraint firstAttribute="bottom" secondItem="Huf-1x-CTl" secondAttribute="bottom" id="e4X-Kl-jZd"/>
+            </constraints>
+            <connections>
+                <outlet property="list" destination="Huf-1x-CTl" id="MxV-Vn-d0F"/>
+                <outlet property="search" destination="cpp-zi-xR0" id="2fs-OI-NVW"/>
+            </connections>
+            <point key="canvasLocation" x="-123.5" y="-80.5"/>
+        </view>
+    </objects>
+</document>

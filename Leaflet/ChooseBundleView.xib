@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CCP-99-DtG" customClass="ChooseBundleView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVp-2K-6re">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Bundle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFt-A3-xJp">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="LUj-hp-AHb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uO9-le-gqL">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClose:" destination="CCP-99-DtG" eventType="touchUpInside" id="27n-6s-FeV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="uO9-le-gqL" firstAttribute="leading" secondItem="AVp-2K-6re" secondAttribute="leading" id="HyB-Ud-Ahs"/>
+                        <constraint firstItem="EFt-A3-xJp" firstAttribute="centerX" secondItem="AVp-2K-6re" secondAttribute="centerX" id="PfG-5f-Uf3"/>
+                        <constraint firstItem="EFt-A3-xJp" firstAttribute="leading" secondItem="uO9-le-gqL" secondAttribute="trailing" constant="47" id="Rat-AV-AHL"/>
+                        <constraint firstItem="uO9-le-gqL" firstAttribute="top" secondItem="EFt-A3-xJp" secondAttribute="top" id="Xzi-6H-4pE"/>
+                        <constraint firstItem="EFt-A3-xJp" firstAttribute="top" secondItem="AVp-2K-6re" secondAttribute="top" constant="8" id="Y8z-V1-bOJ"/>
+                        <constraint firstAttribute="bottom" secondItem="EFt-A3-xJp" secondAttribute="bottom" id="egP-BC-zq6"/>
+                        <constraint firstItem="uO9-le-gqL" firstAttribute="bottom" secondItem="EFt-A3-xJp" secondAttribute="bottom" id="gUo-RO-Zux"/>
+                        <constraint firstAttribute="height" constant="64" id="iWH-gh-KlZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9G-Ba-NLV">
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iZ9-zU-T8M">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <color key="sectionIndexBackgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iZ9-zU-T8M" firstAttribute="leading" secondItem="v9G-Ba-NLV" secondAttribute="leading" id="Bs8-1x-sQT"/>
+                        <constraint firstAttribute="bottom" secondItem="iZ9-zU-T8M" secondAttribute="bottom" id="Gyd-l8-7GL"/>
+                        <constraint firstItem="iZ9-zU-T8M" firstAttribute="top" secondItem="v9G-Ba-NLV" secondAttribute="top" id="cWa-0h-OfT"/>
+                        <constraint firstAttribute="trailing" secondItem="iZ9-zU-T8M" secondAttribute="trailing" id="muI-j3-gXD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AVp-2K-6re" secondAttribute="trailing" id="0JT-h5-tRS"/>
+                <constraint firstItem="AVp-2K-6re" firstAttribute="leading" secondItem="CCP-99-DtG" secondAttribute="leading" id="DTq-Hg-36u"/>
+                <constraint firstItem="v9G-Ba-NLV" firstAttribute="top" secondItem="AVp-2K-6re" secondAttribute="bottom" id="W2W-UQ-AYN"/>
+                <constraint firstItem="v9G-Ba-NLV" firstAttribute="leading" secondItem="CCP-99-DtG" secondAttribute="leading" id="YOF-e6-4SN"/>
+                <constraint firstItem="AVp-2K-6re" firstAttribute="top" secondItem="CCP-99-DtG" secondAttribute="top" id="gjO-2F-Ys6"/>
+                <constraint firstAttribute="bottom" secondItem="v9G-Ba-NLV" secondAttribute="bottom" id="q70-dh-W06"/>
+                <constraint firstAttribute="trailing" secondItem="v9G-Ba-NLV" secondAttribute="trailing" id="zfr-5o-vUg"/>
+            </constraints>
+            <connections>
+                <outlet property="list" destination="iZ9-zU-T8M" id="keY-lI-5UI"/>
+            </connections>
+            <point key="canvasLocation" x="-408.5" y="-438.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4Ec-Hu-KyI" customClass="Profile" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="weX-xn-HLe">
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Wcd-bo-eUf"/>
+                        <constraint firstAttribute="height" constant="90" id="XMZ-jO-uUO"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                            <integer key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="_layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dondrey Taylor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyj-06-wAK">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="e2C-oI-FoP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-NP-J7x">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="5HW-4c-n2S"/>
+                        <constraint firstAttribute="width" constant="74.5" id="x9Y-Gx-B80"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <state key="normal" title="close">
+                        <color key="titleColor" red="0.54465144229999995" green="0.54465144229999995" blue="0.54465144229999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onCloseHandler:" destination="4Ec-Hu-KyI" eventType="touchUpInside" id="Kyx-3i-kUN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrp-Yi-2Ho">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="106" id="dJ5-bP-Irs"/>
+                    </constraints>
+                    <string key="text">This is where the persons bio will go for their profile and whatever else they would like to type will go right here. This is their bio.</string>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.96862745098039216" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="weX-xn-HLe" firstAttribute="top" secondItem="4Ec-Hu-KyI" secondAttribute="top" constant="70" id="6xj-Ht-kWr"/>
+                <constraint firstItem="dk8-NP-J7x" firstAttribute="top" secondItem="4Ec-Hu-KyI" secondAttribute="top" id="9S8-PS-Owi"/>
+                <constraint firstAttribute="trailing" secondItem="lyj-06-wAK" secondAttribute="trailing" constant="16" id="Beh-1F-F30"/>
+                <constraint firstItem="lyj-06-wAK" firstAttribute="top" secondItem="weX-xn-HLe" secondAttribute="bottom" constant="18" id="Dwi-nP-VdQ"/>
+                <constraint firstItem="lyj-06-wAK" firstAttribute="leading" secondItem="4Ec-Hu-KyI" secondAttribute="leading" constant="16" id="IqB-Ok-xSf"/>
+                <constraint firstItem="dk8-NP-J7x" firstAttribute="leading" secondItem="4Ec-Hu-KyI" secondAttribute="leading" id="VR4-sf-TE7"/>
+                <constraint firstItem="vrp-Yi-2Ho" firstAttribute="leading" secondItem="4Ec-Hu-KyI" secondAttribute="leading" constant="16" id="dnQ-wM-ttb"/>
+                <constraint firstItem="weX-xn-HLe" firstAttribute="centerX" secondItem="4Ec-Hu-KyI" secondAttribute="centerX" id="f8U-Hp-iGo"/>
+                <constraint firstAttribute="trailing" secondItem="vrp-Yi-2Ho" secondAttribute="trailing" constant="16" id="s6L-W7-N1h"/>
+                <constraint firstItem="vrp-Yi-2Ho" firstAttribute="top" secondItem="lyj-06-wAK" secondAttribute="bottom" id="xBD-Ha-Li9"/>
+            </constraints>
+            <connections>
+                <outlet property="bio" destination="vrp-Yi-2Ho" id="FmC-ea-9oY"/>
+                <outlet property="icon" destination="weX-xn-HLe" id="1oT-ac-iSz"/>
+                <outlet property="name" destination="lyj-06-wAK" id="Fwm-rm-Zwi"/>
+            </connections>
+            <point key="canvasLocation" x="-219.5" y="41.5"/>
+        </view>
+    </objects>
+</document>

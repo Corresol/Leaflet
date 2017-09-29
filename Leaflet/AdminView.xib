@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BZB-41-sTV" customClass="AdminView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8l-pp-tXe">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEu-IC-sxc">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="cLl-Di-64f"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-zo-mic">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="close">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClose:" destination="BZB-41-sTV" eventType="touchUpInside" id="eno-g6-sXe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="XEu-IC-sxc" firstAttribute="top" secondItem="d8l-pp-tXe" secondAttribute="top" constant="8" id="5O4-so-bol"/>
+                        <constraint firstItem="XEu-IC-sxc" firstAttribute="leading" secondItem="Trd-zo-mic" secondAttribute="trailing" constant="47" id="Gi4-DO-kt7"/>
+                        <constraint firstItem="XEu-IC-sxc" firstAttribute="centerX" secondItem="d8l-pp-tXe" secondAttribute="centerX" id="Mmb-kV-u66"/>
+                        <constraint firstItem="Trd-zo-mic" firstAttribute="bottom" secondItem="XEu-IC-sxc" secondAttribute="bottom" id="csO-Nz-fHf"/>
+                        <constraint firstAttribute="bottom" secondItem="XEu-IC-sxc" secondAttribute="bottom" id="dAq-L3-Smh"/>
+                        <constraint firstItem="Trd-zo-mic" firstAttribute="leading" secondItem="d8l-pp-tXe" secondAttribute="leading" id="e1c-Cd-9QL"/>
+                        <constraint firstItem="Trd-zo-mic" firstAttribute="top" secondItem="XEu-IC-sxc" secondAttribute="top" id="gG2-jc-gHx"/>
+                        <constraint firstAttribute="height" constant="64" id="tRo-Tw-aQ4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTh-Hk-wq2">
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6M-Oq-vSX">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaq-Lo-MKd">
+                                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="261" id="aRZ-9N-djz"/>
+                                        <constraint firstAttribute="height" constant="61" id="smw-SB-wwH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Create Bundle">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onCreateBundle:" destination="BZB-41-sTV" eventType="touchUpInside" id="hDR-ZU-j6W"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znj-de-bBu">
+                                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="61" id="nxE-Xb-WgH"/>
+                                        <constraint firstAttribute="width" constant="261" id="pPD-3x-HuM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Create Itinerary">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="onCreateItinerary:" destination="BZB-41-sTV" eventType="touchUpInside" id="soQ-7r-ef1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvd-6K-iac">
+                                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="61" id="DDN-Gs-zDO"/>
+                                        <constraint firstAttribute="width" constant="261" id="UgX-SO-MKY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Edit Bundle">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLS-Cn-z2Y">
+                                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="261" id="O4W-LG-c3f"/>
+                                        <constraint firstAttribute="height" constant="61" id="lSd-fB-z24"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Edit Itinerary">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" alpha="0.40000000596046448" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otP-ev-ayH">
+                                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="61" id="53X-yW-DWV"/>
+                                        <constraint firstAttribute="width" constant="261" id="nlX-jL-a29"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                    <state key="normal" title="Create Campaign">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="znj-de-bBu" firstAttribute="top" secondItem="aaq-Lo-MKd" secondAttribute="bottom" constant="20" id="5DK-Ss-msR"/>
+                                <constraint firstItem="kLS-Cn-z2Y" firstAttribute="centerX" secondItem="N6M-Oq-vSX" secondAttribute="centerX" id="Fcz-rV-5Xy"/>
+                                <constraint firstItem="aaq-Lo-MKd" firstAttribute="top" secondItem="N6M-Oq-vSX" secondAttribute="top" constant="40" id="I73-1s-QIK"/>
+                                <constraint firstItem="kLS-Cn-z2Y" firstAttribute="top" secondItem="tvd-6K-iac" secondAttribute="bottom" constant="20" id="PgB-09-VnJ"/>
+                                <constraint firstAttribute="bottom" secondItem="otP-ev-ayH" secondAttribute="bottom" constant="198" id="Vbq-1r-mrT"/>
+                                <constraint firstItem="znj-de-bBu" firstAttribute="centerX" secondItem="N6M-Oq-vSX" secondAttribute="centerX" id="VfN-Kl-hqp"/>
+                                <constraint firstItem="otP-ev-ayH" firstAttribute="top" secondItem="kLS-Cn-z2Y" secondAttribute="bottom" constant="20" id="XXX-Iw-0NT"/>
+                                <constraint firstAttribute="trailing" secondItem="aaq-Lo-MKd" secondAttribute="trailing" constant="57" id="cYN-f2-gr7"/>
+                                <constraint firstItem="aaq-Lo-MKd" firstAttribute="centerX" secondItem="N6M-Oq-vSX" secondAttribute="centerX" id="eSH-Ya-i3S"/>
+                                <constraint firstItem="tvd-6K-iac" firstAttribute="top" secondItem="znj-de-bBu" secondAttribute="bottom" constant="20" id="ecp-aW-0xH"/>
+                                <constraint firstItem="tvd-6K-iac" firstAttribute="centerX" secondItem="N6M-Oq-vSX" secondAttribute="centerX" id="pxj-nq-rT4"/>
+                                <constraint firstItem="otP-ev-ayH" firstAttribute="centerX" secondItem="N6M-Oq-vSX" secondAttribute="centerX" id="qfa-vd-zzt"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="N6M-Oq-vSX" firstAttribute="leading" secondItem="ZTh-Hk-wq2" secondAttribute="leading" id="2yT-ZG-ma3"/>
+                        <constraint firstItem="N6M-Oq-vSX" firstAttribute="top" secondItem="ZTh-Hk-wq2" secondAttribute="top" id="PyU-vc-lXS"/>
+                        <constraint firstAttribute="trailing" secondItem="N6M-Oq-vSX" secondAttribute="trailing" id="c0l-LV-kzV"/>
+                        <constraint firstAttribute="bottom" secondItem="N6M-Oq-vSX" secondAttribute="bottom" id="lnN-hi-Eo7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZTh-Hk-wq2" firstAttribute="leading" secondItem="BZB-41-sTV" secondAttribute="leading" id="784-uL-6rK"/>
+                <constraint firstItem="d8l-pp-tXe" firstAttribute="top" secondItem="BZB-41-sTV" secondAttribute="top" id="G58-in-rN5"/>
+                <constraint firstAttribute="trailing" secondItem="ZTh-Hk-wq2" secondAttribute="trailing" id="LDS-an-8qB"/>
+                <constraint firstItem="ZTh-Hk-wq2" firstAttribute="top" secondItem="d8l-pp-tXe" secondAttribute="bottom" id="Wcl-oa-KzA"/>
+                <constraint firstItem="d8l-pp-tXe" firstAttribute="leading" secondItem="BZB-41-sTV" secondAttribute="leading" id="bLg-Xh-DKQ"/>
+                <constraint firstAttribute="trailing" secondItem="d8l-pp-tXe" secondAttribute="trailing" id="gz0-Zw-SAE"/>
+                <constraint firstAttribute="bottom" secondItem="ZTh-Hk-wq2" secondAttribute="bottom" id="m0z-Tb-GDx"/>
+            </constraints>
+            <connections>
+                <outlet property="holderView" destination="N6M-Oq-vSX" id="Ehu-lS-75v"/>
+            </connections>
+            <point key="canvasLocation" x="-288" y="-378"/>
+        </view>
+    </objects>
+</document>

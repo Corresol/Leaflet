@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SPD-33-9Ot" customClass="PermissionPushView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="permission-notification-background" translatesAutoresizingMaskIntoConstraints="NO" id="WKw-aZ-rnu"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYj-Pf-TPn">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="permission-notification-bell" translatesAutoresizingMaskIntoConstraints="NO" id="0PB-XT-ICh">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="151" id="1DQ-gg-Pia"/>
+                                <constraint firstAttribute="width" constant="131" id="bP5-g0-XQT"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-Zy-8Kp">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="249" id="os1-nU-6uk"/>
+                                <constraint firstAttribute="height" constant="54" id="sPv-jg-Aej"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                            <state key="normal" title="ALLOW NOTIFICATIONS">
+                                <color key="titleColor" red="0.69019607839999997" green="0.74509803919999995" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive updates about your itineraries via push notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDG-14-fNe">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="203" id="jbg-Zi-3qg"/>
+                                <constraint firstAttribute="height" constant="76" id="mka-kc-L8w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vv5-Zy-8Kp" secondAttribute="bottom" constant="47" id="1S3-8h-g2J"/>
+                        <constraint firstItem="WDG-14-fNe" firstAttribute="top" secondItem="0PB-XT-ICh" secondAttribute="bottom" constant="18" id="59F-mO-qlp"/>
+                        <constraint firstItem="vv5-Zy-8Kp" firstAttribute="centerX" secondItem="LYj-Pf-TPn" secondAttribute="centerX" id="DSp-fg-mjS"/>
+                        <constraint firstItem="WDG-14-fNe" firstAttribute="centerX" secondItem="LYj-Pf-TPn" secondAttribute="centerX" id="KtX-Cb-QLI"/>
+                        <constraint firstItem="0PB-XT-ICh" firstAttribute="centerX" secondItem="LYj-Pf-TPn" secondAttribute="centerX" id="Z4A-lV-ti5"/>
+                        <constraint firstItem="0PB-XT-ICh" firstAttribute="top" secondItem="LYj-Pf-TPn" secondAttribute="top" constant="75" id="kne-tn-rhT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WKw-aZ-rnu" firstAttribute="top" secondItem="SPD-33-9Ot" secondAttribute="top" id="Amc-nl-YkL"/>
+                <constraint firstAttribute="bottom" secondItem="WKw-aZ-rnu" secondAttribute="bottom" id="DCZ-Wo-0LV"/>
+                <constraint firstItem="LYj-Pf-TPn" firstAttribute="leading" secondItem="SPD-33-9Ot" secondAttribute="leading" id="U6K-PK-sKJ"/>
+                <constraint firstItem="LYj-Pf-TPn" firstAttribute="top" secondItem="SPD-33-9Ot" secondAttribute="top" id="ZTW-jG-Sgr"/>
+                <constraint firstItem="WKw-aZ-rnu" firstAttribute="leading" secondItem="SPD-33-9Ot" secondAttribute="leading" id="jsS-8H-Jaw"/>
+                <constraint firstAttribute="trailing" secondItem="LYj-Pf-TPn" secondAttribute="trailing" id="m1t-Mb-Fux"/>
+                <constraint firstAttribute="trailing" secondItem="WKw-aZ-rnu" secondAttribute="trailing" id="q8X-sI-R4p"/>
+                <constraint firstAttribute="bottom" secondItem="LYj-Pf-TPn" secondAttribute="bottom" id="xoG-4a-lPT"/>
+            </constraints>
+            <connections>
+                <outlet property="allowPermissionBtn" destination="vv5-Zy-8Kp" id="4Ge-Jw-GKg"/>
+            </connections>
+            <point key="canvasLocation" x="-402" y="-500"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="permission-notification-background" width="1604" height="2848"/>
+        <image name="permission-notification-bell" width="256" height="256"/>
+    </resources>
+</document>

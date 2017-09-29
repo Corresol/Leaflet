@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eKq-dz-IQF" customClass="ItinerariesView" customModule="Leaflets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njN-gS-kbc">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxG-Ff-kBb">
+                            <frame key="frameInset" minY="8" width="75" height="56"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <state key="normal" title="back">
+                                <color key="titleColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onClose:" destination="eKq-dz-IQF" eventType="touchUpInside" id="zmK-bO-TrT"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plans" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMB-T5-A1L">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="Ufg-UT-Ve2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.49803921569999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="hMB-T5-A1L" firstAttribute="centerX" secondItem="njN-gS-kbc" secondAttribute="centerX" id="3kw-XF-aCU"/>
+                        <constraint firstItem="hMB-T5-A1L" firstAttribute="top" secondItem="njN-gS-kbc" secondAttribute="top" constant="8" id="XVh-Gm-lta"/>
+                        <constraint firstAttribute="bottom" secondItem="hMB-T5-A1L" secondAttribute="bottom" id="g7z-Jb-PU0"/>
+                        <constraint firstAttribute="height" constant="64" id="pfT-ZN-hTV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-FN-9yP">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zvp-FN-9yP" secondAttribute="trailing" id="Ba4-63-LVF"/>
+                <constraint firstItem="njN-gS-kbc" firstAttribute="top" secondItem="eKq-dz-IQF" secondAttribute="top" id="Ebr-DA-puJ"/>
+                <constraint firstItem="zvp-FN-9yP" firstAttribute="leading" secondItem="eKq-dz-IQF" secondAttribute="leading" id="YBW-Jj-tH1"/>
+                <constraint firstAttribute="bottom" secondItem="zvp-FN-9yP" secondAttribute="bottom" id="fy3-Rk-am4"/>
+                <constraint firstAttribute="trailing" secondItem="njN-gS-kbc" secondAttribute="trailing" id="r6Z-fM-CV2"/>
+                <constraint firstItem="zvp-FN-9yP" firstAttribute="top" secondItem="njN-gS-kbc" secondAttribute="bottom" id="vH6-IQ-oh1"/>
+                <constraint firstItem="njN-gS-kbc" firstAttribute="leading" secondItem="eKq-dz-IQF" secondAttribute="leading" id="xdh-lM-N3v"/>
+            </constraints>
+            <connections>
+                <outlet property="headerView" destination="njN-gS-kbc" id="2vd-Fd-1bE"/>
+                <outlet property="holder" destination="zvp-FN-9yP" id="eIO-ht-PJ6"/>
+            </connections>
+            <point key="canvasLocation" x="-310" y="-702"/>
+        </view>
+    </objects>
+</document>
